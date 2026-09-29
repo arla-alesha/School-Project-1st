@@ -1,0 +1,22 @@
+#include <iostream> 
+#include <iomanip> 
+using namespace std; 
+ 
+int main() { 
+    int rupiah; 
+    double kurs; 
+
+    cout << "Masukkan jumlah rupiah: "; 
+    cin >> rupiah; 
+    cout << "Masukkan kurs: "; 
+    cin >> kurs; 
+
+    double dolar = rupiah / kurs; 
+    
+    cout << fixed << setprecision(2); 
+    cout << left; 
+    cout << setw (18) << "Jumlah Rupiah" << setw (18) << "Kurs Konversi:" << setw (18) << "Jumlah Dolar" << endl; 
+    cout << setw (18) << rupiah << setw (18) << kurs << setw (18) << dolar << endl; 
+ 
+return 0; 
+} 

@@ -1,0 +1,37 @@
+#include <iostream> 
+#include <iomanip> 
+using namespace std; 
+
+int main() { 
+//Masukkan data
+    double height; 
+    double weight; 
+
+    cout << "Masukkan height (cm): "; 
+    cin >> height; 
+
+    cout << "Masukkan weight (kg): "; 
+    cin >> weight; 
+
+//Menghitung BMI
+    double BMI = weight / ((height / 100) * (height / 100)); 
+
+    cout << fixed << setprecision(1);
+    cout << "BMI = " << BMI << endl;
+
+// Menentukan kategori BMI
+    if (BMI < 18.5) {
+        cout << "Underweight";
+    }
+    else if (BMI >= 18.5 && BMI <=24.9) {
+        cout << "Normal";
+    }
+     else if (BMI >= 25 && BMI <= 29.9) {
+        cout << "Overweight";
+    }
+    else if (BMI >= 30 ) {
+        cout << "Obesitas";
+    }
+
+    return 0;
+}

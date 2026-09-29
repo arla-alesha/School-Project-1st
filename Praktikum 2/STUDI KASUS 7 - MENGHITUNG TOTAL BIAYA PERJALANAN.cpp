@@ -1,0 +1,21 @@
+#include <iostream> 
+#include <iomanip> 
+using namespace std; 
+
+int main() { 
+    double jarakTempuh; 
+    double konsumsiBahanBakar; 
+    double hargaBahanBakar; 
+
+    cout << "Masukan Jarak Tempuh: "; 
+    cin >> jarakTempuh; 
+    cout << "Masukan Konsumsi Bahan Bakar: "; 
+    cin >> konsumsiBahanBakar; 
+    cout << "Masukan Harga Bahan Bakar: "; 
+    cin >> hargaBahanBakar; 
+
+    double biayaBahanBakar = hargaBahanBakar * (jarakTempuh / konsumsiBahanBakar); 
+    cout << "Total Biaya Bahan Bakar: " << fixed <<setprecision(2) << biayaBahanBakar << endl; 
+
+return 0; 
+} 
